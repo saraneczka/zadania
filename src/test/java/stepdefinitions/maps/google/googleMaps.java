@@ -9,7 +9,7 @@ import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class googleMaps {
+public class GoogleMaps {
 
     private WebDriver driver;
 
