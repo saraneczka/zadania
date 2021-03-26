@@ -1,0 +1,8 @@
+Feature: Check adding referral code
+
+  Scenario: Check if adding referral code is possible
+    Given I am on the Pluto start page
+    When Close popup
+    And Click Have a friend's referral code
+    And Enter discount code
+    And Click on Annual Cover

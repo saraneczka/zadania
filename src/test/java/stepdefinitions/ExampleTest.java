@@ -18,7 +18,7 @@ public class ExampleTest {
 
     @Before
     public void beforeScenario() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\a788326\\IdeaProjects\\cucumber-java-example\\src\\test\\resources\\webdriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/annasarnowska/IdeaProjects/Pluto/src/test/resources/webdriver/chromedrivermac");
         driver = new ChromeDriver();
     }
 
