@@ -46,8 +46,8 @@ public class ReferralCode {
     @Then("Click on Annual Cover")
     public void clickAnnual() {
         driver.findElement(By.cssSelector(".jss283:nth-child(3) .jss333")).click();
-//        WebElement element = driver.findElement((By.cssSelector(".jss299")));
-//        Assert.assertTrue(element.isDisplayed());
+        WebElement element = driver.findElement((By.xpath("//h3[contains(text(),'Some details about your trip')]")));
+        Assert.assertTrue(element.isDisplayed());
 
     }
 }
