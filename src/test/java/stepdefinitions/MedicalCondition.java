@@ -29,11 +29,21 @@ public class MedicalCondition {
 
     @And("I enter name")
     public void clickNameField() {
+        driver.findElement(By.cssSelector("#username")).click();
         driver.findElement(By.id("username")).sendKeys("abc abc");
     }
 
     @And("I enter age")
-    public void clickAgeField(){
+    public void clickAgeField() {
+        driver.findElement(By.id("age")).click();
+        driver.findElement(By.id("age")).sendKeys("31");
+
+    }
+
+    @And(I choose I do have a pre-existing medical condition)
+    public void clickIdoHave() {
+        driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/fieldset[1]/div[1]/label[2]/span[1]/span[1]/input[1]")).click();
+
 
     }
 }
