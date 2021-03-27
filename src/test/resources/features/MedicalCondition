@@ -1,0 +1,10 @@
+Feature: Pre-existing medical conditions
+
+  Scenario: Check if user can buy policy having pre-existing medical conditions
+    Given I am on the Pluto start page
+    When Close popup
+    And I click on Annual cover
+    And I enter name
+    And I enter age
+    And I choose I do have a pre-existing medical condition
+    Then I click next
