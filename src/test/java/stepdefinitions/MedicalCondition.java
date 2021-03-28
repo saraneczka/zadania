@@ -30,6 +30,12 @@ public class MedicalCondition {
         driver.close();
     }
 
+    @And("Click next")
+    public void clickNext1() {
+        driver.findElement(By.cssSelector(".jss415 > span")).click();
+    }
+
+
     @And("I enter name")
     public void clickNameField() {
         driver.findElement(By.cssSelector("#username")).click();
@@ -45,16 +51,16 @@ public class MedicalCondition {
 
     @And("I choose I do have a pre-existing medical condition")
     public void clickIdoHave() {
-        driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/fieldset[1]/div[1]/label[2]/span[1]/span[1]/input[1]")).click();
+        driver.findElement(By.xpath(".jss415 > span")).click();
     }
-
     @Then("I click next")
-    public void clickNext() {
+    public void clickNext () {
         driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/button[1]/span[1]")).click();
         WebElement element = driver.findElement((By.xpath("//p[contains(text(),'We’re really sorry')]")));
         Assert.assertTrue(element.isDisplayed());
     }
 }
+
 
 
 
